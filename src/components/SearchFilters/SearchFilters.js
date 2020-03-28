@@ -177,43 +177,11 @@ const SearchFiltersComponent = props => {
     />
   ) : null;
 
-  const amenitiesFilterElement = amenitiesFilter ? (
-    <SelectMultipleFilter
-      id={'SearchFilters.amenitiesFilter'}
-      name="amenities"
-      urlParam={amenitiesFilter.paramName}
-      label={amenitiesLabel}
-      onSubmit={handleSelectOptions}
-      showAsPopup
-      options={amenitiesFilter.options}
-      initialValues={initialAmenities}
-      contentPlacementOffset={FILTER_DROPDOWN_OFFSET}
-    />
-  ) : null;
+  const amenitiesFilterElement = null;
 
-  const priceFilterElement = priceFilter ? (
-    <PriceFilter
-      id="SearchFilters.priceFilter"
-      urlParam={priceFilter.paramName}
-      onSubmit={handlePrice}
-      showAsPopup
-      {...priceFilter.config}
-      initialValues={initialPriceRange}
-      contentPlacementOffset={FILTER_DROPDOWN_OFFSET}
-    />
-  ) : null;
+  const priceFilterElement = null;
 
-  const dateRangeFilterElement =
-    dateRangeFilter && dateRangeFilter.config.active ? (
-      <BookingDateRangeFilter
-        id="SearchFilters.dateRangeFilter"
-        urlParam={dateRangeFilter.paramName}
-        onSubmit={handleDateRange}
-        showAsPopup
-        contentPlacementOffset={FILTER_DROPDOWN_OFFSET}
-        initialValues={initialDateRange}
-      />
-    ) : null;
+  const dateRangeFilterElement =null;
 
   const keywordFilterElement =
     keywordFilter && keywordFilter.config.active ? (

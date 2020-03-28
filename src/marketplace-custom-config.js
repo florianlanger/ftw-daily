@@ -37,11 +37,21 @@ export const amenities = [
   },
 ];
 
+
+
 export const categories = [
-  { key: 'smoke', label: 'Smoke' },
-  { key: 'electric', label: 'Electric' },
-  { key: 'wood', label: 'Wood' },
-  { key: 'other', label: 'Other' },
+  { key: 'Baecker', label: 'Bäcker' },
+  { key: 'cafe', label: 'Cafe' },
+  { key: 'Fahrradladen', label: 'Fahrradladen' },
+  { key: 'friseur', label: 'Friseur' },
+  { key: 'Getraenke', label: 'Getränkeladen' },
+  { key: 'Metzger', label: 'Metzger' },
+  { key: 'Reinigung', label: 'Reinigung' },
+  { key: 'restaurant', label: 'Restaurant' },
+  { key: 'Schreibwaren', label: 'Schreibwaren' },
+  { key: 'Tierhandlung', label: 'Tierhandlung' },
+  { key: 'Schuster', label: 'Schuster' },
+  { key: 'andere', label: 'Andere' }
 ];
 
 // Price filter configuration
